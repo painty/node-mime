@@ -101,7 +101,9 @@ mime.Mime = Mime;
 mime.charsets = {
   lookup: function(mimeType, fallback) {
     // Assume text types are utf8
-    return (/^text\//).test(mimeType) ? 'UTF-8' : fallback;
+    // return (/^text\//).test(mimeType) ? 'UTF-8' : fallback;
+    // return (/^text\//).test(mimeType) ? '' : fallback;
+    return (/^text\//).test(mimeType) ? '' : '';
   }
 };
 
